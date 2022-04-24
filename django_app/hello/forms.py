@@ -1,4 +1,10 @@
+from tkinter import Widget
 from django import forms
 
-class HelloForm(forms.Form):
-    id = forms.IntegerField(label='ID')
+from django import forms
+from .models import Friend
+
+class FriendForm(forms.ModelForm):
+    class Meta:
+        model = Friend
+        fields = ['name', 'mail', 'gender', 'age', 'birthday']

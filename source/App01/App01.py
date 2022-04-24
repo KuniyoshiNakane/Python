@@ -1,8 +1,10 @@
 import PySimpleGUI as sg
 
+sg.theme('Dark Brown')
+
 # レイアウト
-layout = [[sg.Text('これは PySimpleGUI を使ったサンプルプログラムです． ')],
-[sg.Button('Quit '),sg. Button('OK ')]]
+layout = [[sg.Text('これは PySimpleGUI を使ったサンプルプログラムです． ', font=('System', 14))],
+[sg.Button('Quit ', font=('monospace', 12)),sg. Button('OK ', font=('monospace', 12))]]
 # ウィンドウ作成
 window = sg.Window ('Sample01 ', layout)
 # イベントループ
