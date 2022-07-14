@@ -21,6 +21,6 @@ def create(request):
         return redirect(to='/hello')
     params = {
         'title': 'Hello',
-        'form' : FriendForm(),
+        'form': FriendForm(),
     }
     return render(request, 'hello/create.html', params)
